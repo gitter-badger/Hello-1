@@ -1,2 +1,3 @@
 # Hello
-My first Repository ever
+My first Repository ever! </br>
+My name is Tzahi, I'm a student of Electrical Engineering
