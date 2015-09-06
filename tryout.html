@@ -1,19 +1,36 @@
 <html>
-  <script>
-  	$(document).ready(function() {
-  		$('#dis').click(function() {
-  		  $('#dis').addClass("animated shake");
-  		}
-  	}
-  </script>
-  <style>
-  	button (color: "red";)
-  </style>
-  <head>
-  	<title>this is the first document I do!</title>
-  </head>
-  <body>
-  	Hello World!
-  	<button id="dis" class="btn btn-default">Touch me!</button>
-  </body>
+    <head>
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+        <title>this is a document</title>
+        <style>
+            body {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function() {
+                $('#dis').click(function() {
+                    $('body').css('background-color', 'white');
+                });
+                $('#dis').hover(function() {
+                    $('div').addClass('animated shake');
+                });
+            });
+        </script>
+        Hello World!
+        <br>
+        <div class="well">
+            <button id="dis" class="btn btn-primary">Touch me!</button>
+        </div>
+    </body>
 </html>
